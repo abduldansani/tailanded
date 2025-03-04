@@ -1,0 +1,27 @@
+.menu {
+  z-index: 50;
+  min-height: 100vh;
+  padding: 24px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.2); /* Light mode */
+  backdrop-filter: blur(40px);
+
+  /* Instead of display: none */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+/* Dark mode */
+html[data-theme="dark"] .menu {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Show menu */
+.menu.open {
+  visibility: visible;
+  opacity: 1;
+}

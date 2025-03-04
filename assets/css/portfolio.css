@@ -1,0 +1,107 @@
+.portfolio__title {
+  color: var(--color-primary);
+  font-size: 32px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+html[data-theme="dark"] .portfolio__title {
+  color: var(--color-primary-light);
+}
+
+.portfolio__description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.portfolio__container {
+  margin-top: 62px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+
+.portfolio__card {
+  padding: 16px 16px 40px;
+  border: 2px solid var(--color-primary-lighter);
+  background-color: var(--color-neutral-white);
+  border-radius: 62px;
+}
+
+html[data-theme="dark"] .portfolio__card {
+  background-color: var(--color-neutral-black);
+  border: none;
+}
+
+.portfolio__card img {
+  width: 100%;
+}
+
+.portfolio__link {
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 18px;
+  border: 1px solid var(--color-primary-lightest);
+  border-radius: 28px;
+  color: var(--color-primary);
+  font-size: 20px;
+}
+
+html[data-theme="dark"] .portfolio__link {
+  border-color: var(--color-neutral-gray);
+  color: var(--color-primary-light);
+}
+
+.portfolio__explore {
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 24px;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-white);
+  border-radius: 28px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+html[data-theme="dark"] .portfolio__explore {
+  background-color: var(--color-neutral);
+  color: var(--color-neutral-black);
+}
+
+@media (min-width: 768px) {
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio__explore {
+    width: fit-content;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio__title {
+    font-size: 48px;
+  }
+  .portfolio__description {
+    font-size: 24px;
+  }
+
+  .portfolio__link,
+  .portfolio__explore {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .portfolio__title,
+  .portfolio__description {
+    text-align: left;
+  }
+  .portfolio__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 52px;
+  }
+}

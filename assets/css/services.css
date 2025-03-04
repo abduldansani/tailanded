@@ -1,0 +1,14 @@
+.services__title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.services__description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.services__title,
+.services__description {
+  text-align: center;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navin</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/header/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/menu.css" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/portfolio.css" />
+    <link rel="stylesheet" href="./assets/css/skills.css" />
+    <link rel="stylesheet" href="./assets/css/testimonials.css" />
+    <link rel="stylesheet" href="./assets/css/services.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <!-- ### HEADER ### -->
+    <header class="header">
+      <!-- LOGO -->
+      <img
+        src="./assets/images/header/logo.svg"
+        data-light="./assets/images/header/logo.svg"
+        data-dark="./assets/images/header/logo_light.svg"
+        alt="Navin"
+        width="60"
+        height="50"
+        class="header__logo theme-img"
+      />
+
+      <!-- NAVIGATION LIKS, THEME SWITCH AND HIRE ME BUTTON -->
+      <div class="header__links">
+        <!-- Navigation links -->
+        <nav class="header__navLinks">
+          <a href="#about">About Me</a>
+          <a href="#portfolio">Recent Projects</a>
+          <a href="#contact">Contact Me</a>
+        </nav>
+        <!-- Theme switch -->
+        <button id="theme-toggle">
+          <img
+            src="./assets/images/header/moon.svg"
+            data-light="./assets/images/header/moon.svg"
+            data-dark="./assets/images/header/sun.svg"
+            alt="dark mode"
+            width="33"
+            height="33"
+            class="theme-img"
+          />
+        </button>
+        <!-- Hire me Button -->
+        <button class="header__hireMeBtn">
+          <span class="">Hire Me</span>
+          <img
+            src="./assets/images/work.svg"
+            data-light="./assets/images/header/work.svg"
+            data-dark="./assets/images/header/work_black.svg"
+            alt="work"
+            width="33"
+            height="33"
+            class="theme-img"
+          />
+        </button>
+        <button class="header__menuBtn">
+          <img
+            src="./assets/images/header/menu.svg"
+            alt="menu"
+            width="60"
+            height="60"
+            class="header__menuIcon"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="menu"></div>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <!-- Top-left blur effect -->
+        <div class="hero__blur"></div>
+
+        <!-- Hero content -->
+        <div class="hero__content">
+          <!-- text -->
+          <div class="hero__text">
+            <p class="hero__name">Hi! my name is Navin</p>
+            <h1 class="hero__title">
+              I’m <span>Product</span><br />
+              <span>Designer</span>
+            </h1>
+            <p class="hero__subtitle">
+              I’m a Product Designer specializing in user-friendly and visually
+              stunning designs using Figma, Adobe XD, Sketch, and Photoshop.
+            </p>
+            <!-- Button -->
+            <a href="#portfolio" class="hero__btn">My Recent Projects</a>
+          </div>
+          <!-- image -->
+          <img
+            src="./assets/images/hero/hero_img.png"
+            alt="hero image"
+            width="572"
+            height="713"
+            class="hero__img"
+          />
+        </div>
+      </section>
+      <!-- END OF HERO SECTION -->
+
+      <!-- ABOUT ME SECTION -->
+      <section id="about" class="about">
+        <!-- image -->
+        <img
+          src="./assets/images/about/about_img.png"
+          alt="about image"
+          width="400"
+          height="480"
+          class="about__img"
+        />
+        <!-- text -->
+        <div class="about__text">
+          <h1 class="about__title">About Me</h1>
+          <h2 class="about__subtitle">Designing with Purpose</h2>
+          <p class="about__content">
+            With 9 years of experience in UI/UX and product design, I create
+            seamless digital experiences that drive engagement and growth.
+            Whether it’s web apps, mobile apps, or interactive prototypes, I
+            bring ideas to life with precision and creativity.
+          </p>
+          <a href="#contact" class="about__btn">Work with Me</a>
+        </div>
+      </section>
+      <!-- END OF ABOUT ME SECTION -->
+
+      <!-- PORTFOLIO PROJECTS SECTION -->
+      <section class="portfolio">
+        <h2 class="portfolio__title">My Recent Projects</h2>
+        <p class="portfolio__description">
+          A collection of my best projects, showcasing creativity, <br />
+          usability, and design excellence.
+        </p>
+        <div id="test" class="portfolio__container">
+          <!-- added via javascript -->
+        </div>
+        <a href="" class="portfolio__explore">Explore My Portfolio</a>
+      </section>
+      <!-- END OF PORTFOLIO SECTION -->
+
+      <!-- SKILLS SECTION -->
+      <section class="skills">
+        <h2 class="skills__title">Tools I Master</h2>
+        <p class="skills__description">
+          Bringing concepts to reality with industry- <br />leading design
+          tools:
+        </p>
+        <!-- skills container -->
+        <div class="skills__container">
+          <!-- skills adden via javascript -->
+        </div>
+      </section>
+      <!-- END OF SKILLS SECTION -->
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="testimonials">
+        <h2 class="testimonials__title">What Clients Say</h2>
+        <p class="testimonials__description">
+          Real feedback from happy clients and <br />
+          teams I’ve collaborated with.
+        </p>
+        <div class="testimonials__container">
+          <!-- Next and Previous buttons -->
+          <button class="testimonials__prevBtn">
+            <img
+              src="./assets/images/testimonials/chevron_left.svg"
+              alt="prev"
+              width="50"
+              height="50"
+            />
+          </button>
+          <button class="testimonials__nextBtn">
+            <img
+              src="./assets/images/testimonials/chevron_right.svg"
+              alt="next"
+              width="50"
+              height="50"
+            />
+          </button>
+          <!-- Testimonial content -->
+          <div class="testimonials__content">
+            <!-- added via javascript -->
+            <div class="testimonials__person">
+              <img src="" alt="" class="testimonials__image" />
+              <div class="testimonials__personalDetails">
+                <h3 class="testimonials__name"></h3>
+                <p class="testimonials__position"></p>
+              </div>
+            </div>
+            <div class="testimonials__details">
+              <div class="testimonials__quoteBefore">“</div>
+              <div class="testimonials__quoteAfter">“</div>
+              <p class="testimonials__testimonial"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END OF TESTIMONIALS SECTION -->
+
+      <!-- SERVICES SECTION -->
+      <section class="services">
+        <h3 class="services__title">Services</h3>
+        <p class="services__description">
+          Let’s Build Something Amazing Together. Here’s <br />
+          how I can help your business thrive
+        </p>
+        <div class="services__container"></div>
+      </section>
+      <!-- END OF SERVICES SECTION -->
+
+      <!-- CONTACT SECTION -->
+      <section class="contact">
+        <div class="contact__text">
+          <h1 class="contact__watermark">Contact Me</h1>
+          <h3 class="contact__title">Contact Me</h3>
+          <p class="contact__description">
+            Have a project in mind? Let’s create <br />
+            something exceptional together.
+          </p>
+        </div>
+        <form action="" class="contact__form">
+          <input type="text" placeholder="Enter your email address" />
+          <input type="text" placeholder="Enter your name" />
+          <textarea name="" id="" placeholder="Project details"></textarea>
+          <button class="contact__submitBtn">
+            <div class="contact__button">
+              <div class="">Send</div>
+              <img
+                data-light="./assets/images/contact/send.svg"
+                data-dark="./assets/images/contact/send_black.svg"
+                src="./assets/images/contact/send.svg"
+                alt=""
+                class="theme-img"
+              />
+            </div>
+          </button>
+        </form>
+      </section>
+      <!-- END OF CONTACT SECTION -->
+
+      <!-- FOOTER SECTION -->
+      <footer class="footer">
+        <div class="footer__logo">
+          <img
+            src="./assets/images/footer/logo_white.svg"
+            alt="Logo"
+            width="80"
+            height="67"
+          />
+          <p class="footer__name">Navin</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <h4 class="footer__linksTitle">Social Handles</h4>
+            <div class="footer__socialLinks">
+              <a href="https://linkedin.com" class="footer__socialLink">
+                <img src="./assets/images/footer/linkedIn.svg" alt="LinkedIn" />
+                <p>LinkedIn</p>
+              </a>
+              <a href="https://dribble.com" class="footer__socialLink">
+                <img src="./assets/images/footer/dribble.svg" alt="Dribbble" />
+                <p>Dribbble</p>
+              </a>
+              <a href="https://behance.com" class="footer__socialLink">
+                <img src="./assets/images/footer/behance.svg" alt="Behance" />
+                <p>Behance</p>
+              </a>
+              <a href="https://x.com" class="footer__socialLink">
+                <img src="./assets/images/footer/x.svg" alt="X" />
+                <p>X (Twitter)</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer__quickLinks">
+            <h4 class="footer__linksTitle">Quick Links</h4>
+            <nav class="footer__navLinks">
+              <a href="#about">About Me</a>
+              <a href="#portfolio">Recent Projects</a>
+              <a href="#contact">Contact Me</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__separator"></div>
+        <p class="footer__copyright">
+          <!-- added via js -->
+        </p>
+      </footer>
+      <!-- END OF FOOTER SECTION -->
+    </main>
+    <script src="./assets/js/themeToggle.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/portfolio.js"></script>
+    <script src="./assets/js/skills.js"></script>
+    <script src="./assets/js/testimonials.js"></script>
+  </body>
+</html>

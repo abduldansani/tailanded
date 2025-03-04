@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #7b68e5;
+  --color-primary-light: #bdb4f2;
+  --color-primary-lighter: #bdb4f2;
+  --color-primary-lightest: #ded9f9;
+  --color-primary-dark: #11093c;
+  --color-secondary: #fba418;
+  --color-secondary-light: #fdd18c;
+  --color-black: #0d0d0d;
+  --color-neutral-black: #252525;
+  --color-light-black: #141414;
+  --color-lighter-black: #323232;
+  --color-neutral-white: #fbfbff;
+  --color-neutral-light: #f8f8f8;
+  --color-neutral-gray: #8e8e8e;
+  --color-neutral: #dadada;
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-secondary);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+body {
+  line-height: 1.5;
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-black);
+  font-family: var(--font-primary);
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--color-black);
+  color: var(--color-neutral);
+}
+
+section,
+footer {
+  padding: 100px 25px;
+}
+
+@media (min-width: 1024px) {
+  section,
+  footer {
+    padding: 100px;
+  }
+}
