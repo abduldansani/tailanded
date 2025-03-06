@@ -4,28 +4,32 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 70px;
   padding: 0 20px;
   background-color: #fbfbff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.2); /* add one for dark mode */
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(40px);
 }
 
-html[data-theme="dark"] .header {
+[data-theme="dark"] .header {
   background: rgba(0, 0, 0, 0.2);
+}
+
+.header__logo {
+  width: 40px;
 }
 
 .header__links {
   display: flex;
   align-items: center;
-  gap: 24px; /*different on larger screens*/
+  gap: 16px;
 }
 
 .header__navLinks {
-  display: none; /*display:flex on tablet*/
+  display: none;
 }
 
 .header__navLinks a {
@@ -51,6 +55,10 @@ html[data-theme="dark"] .header {
 }
 
 @media (min-width: 1024px) {
+  .header {
+    height: 100px;
+  }
+
   .header__links {
     gap: 40px;
   }
@@ -70,7 +78,15 @@ html[data-theme="dark"] .header {
     color: var(--color-neutral-white);
   }
 
-  html[data-theme="dark"] .header__hireMeBtn {
+  .header__hireMeBtn:hover {
+    background-color: var(--color-primary);
+  }
+
+  [data-theme="dark"] .header__hireMeBtn:hover {
+    background-color: var(--color-primary-light);
+  }
+
+  [data-theme="dark"] .header__hireMeBtn {
     background-color: var(--color-neutral);
     color: var(--color-neutral-black);
   }
@@ -78,8 +94,15 @@ html[data-theme="dark"] .header {
   .header__menuBtn {
     display: none;
   }
+
+  .header__logo {
+    width: 50px;
+  }
 }
 @media (min-width: 1280px) {
+  .header__logo {
+    width: 50px;
+  }
   .header__links {
     gap: 80px;
   }
