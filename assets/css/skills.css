@@ -4,17 +4,16 @@
   flex-direction: column;
 }
 
-html[data-theme="dark"] .skills {
+[data-theme="dark"] .skills {
   background-color: var(--color-primary-dark);
 }
 
 .skills__title {
   font-size: 32px;
-  font-weight: 700;
   margin-bottom: 10px;
 }
 
-html[data-theme="dark"] .skills__title {
+[data-theme="dark"] .skills__title {
   color: var(--color-neutral-white);
 }
 
@@ -42,15 +41,15 @@ html[data-theme="dark"] .skills__title {
 
 .skills__name {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 8px;
 }
 
 .skills__use {
-  font-size: 24px;
+  font-size: 15px;
 }
 
-html[data-theme="dark"] .skills__use .skills__name {
+[data-theme="dark"] .skills__use .skills__name {
   color: var(--color-neutral-light);
 }
 

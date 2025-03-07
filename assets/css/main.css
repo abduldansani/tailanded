@@ -63,6 +63,10 @@ select {
   font: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.5;
   background-color: var(--color-neutral-white);
@@ -70,7 +74,7 @@ body {
   font-family: var(--font-primary);
 }
 
-html[data-theme="dark"] body {
+[data-theme="dark"] body {
   background-color: var(--color-black);
   color: var(--color-neutral);
 }

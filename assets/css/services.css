@@ -1,14 +1,30 @@
 .services__title {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 .services__description {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 14px;
 }
 
 .services__title,
 .services__description {
   text-align: center;
+}
+
+.todo {
+  font-style: italic;
+  color: red;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .services__title {
+    font-size: 48px;
+  }
+
+  .services__description {
+    font-size: 24px;
+  }
 }

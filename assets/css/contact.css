@@ -15,13 +15,17 @@
   margin-bottom: 20px;
 }
 
+[data-theme="dark"] .contact__watermark {
+  color: var(--color-neutral) !;
+}
+
 .contact__title {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-html[data-theme="dark"] .contact__title {
+[data-theme="dark"] .contact__title {
   color: var(--color-neutral-white);
 }
 
@@ -29,7 +33,7 @@ html[data-theme="dark"] .contact__title {
   font-size: 14px;
 }
 
-html[data-theme="dark"] .contact__title {
+[data-theme="dark"] .contact__title {
   color: var(--color-neutral-light);
 }
 
@@ -41,18 +45,30 @@ html[data-theme="dark"] .contact__title {
 }
 
 .contact__form input,
-textarea {
-  padding: 30px;
+.contact__form textarea {
+  padding: 20px 30px;
+  background-color: inherit;
   border-radius: 28px;
   font-size: 20px;
   outline: none;
   border: 1px solid var(--color-neutral);
 }
 
-html[data-theme="dark"] .contact__form input,
-html[data-theme="dark"] textarea {
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .contact__form input,
+[data-theme="dark"] .contact__form textarea {
   background-color: var(--color-neutral-black);
   border-color: var(--color-neutral-gray);
+  color: var(--color-neutral);
+}
+
+[data-theme="dark"] .contact__form input:focus,
+[data-theme="dark"] .contact__form textarea:focus {
+  border-color: var(--color-primary);
 }
 
 .contact__form textarea {
@@ -75,10 +91,23 @@ html[data-theme="dark"] textarea {
   box-shadow: 0px 15px 30px 0px rgba(151, 71, 255, 0.2);
 }
 
-html[data-theme="dark"] .contact__button {
+.contact__button:hover {
+  background-color: var(--color-primary-darker);
+}
+
+[data-theme="dark"] .contact__button {
   background-color: var(--color-primary-lighter);
   color: var(--color-neutral-black);
   box-shadow: none;
+}
+
+[data-theme="dark"] .contact__button:hover {
+  background-color: var(--color-neutral);
+}
+
+.contact__button img {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: 1024px) {
